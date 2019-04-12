@@ -1,14 +1,14 @@
 {
-  "main.css": "/gooapp/web/static/css/main.1a206faa.chunk.css",
-  "main.js": "/gooapp/web/static/js/main.e1df11ff.chunk.js",
-  "main.js.map": "/gooapp/web/static/js/main.e1df11ff.chunk.js.map",
-  "runtime~main.js": "/gooapp/web/static/js/runtime~main.12820056.js",
-  "runtime~main.js.map": "/gooapp/web/static/js/runtime~main.12820056.js.map",
-  "static/js/2.6efc73d3.chunk.js": "/gooapp/web/static/js/2.6efc73d3.chunk.js",
-  "static/js/2.6efc73d3.chunk.js.map": "/gooapp/web/static/js/2.6efc73d3.chunk.js.map",
-  "index.html": "/gooapp/web/index.html",
-  "precache-manifest.9081958f156e3a9c536a1c0e4b84878e.js": "/gooapp/web/precache-manifest.9081958f156e3a9c536a1c0e4b84878e.js",
-  "service-worker.js": "/gooapp/web/service-worker.js",
-  "static/css/main.1a206faa.chunk.css.map": "/gooapp/web/static/css/main.1a206faa.chunk.css.map",
-  "static/media/logo.svg": "/gooapp/web/static/media/logo.5d5d9eef.svg"
+  "main.css": "/web/static/css/main.1a206faa.chunk.css",
+  "main.js": "/web/static/js/main.3213df8d.chunk.js",
+  "main.js.map": "/web/static/js/main.3213df8d.chunk.js.map",
+  "runtime~main.js": "/web/static/js/runtime~main.c75ffd02.js",
+  "runtime~main.js.map": "/web/static/js/runtime~main.c75ffd02.js.map",
+  "static/js/2.6efc73d3.chunk.js": "/web/static/js/2.6efc73d3.chunk.js",
+  "static/js/2.6efc73d3.chunk.js.map": "/web/static/js/2.6efc73d3.chunk.js.map",
+  "index.html": "/web/index.html",
+  "precache-manifest.ef1c7e5e1a8355cdbd9e5afd4b2dbfd8.js": "/web/precache-manifest.ef1c7e5e1a8355cdbd9e5afd4b2dbfd8.js",
+  "service-worker.js": "/web/service-worker.js",
+  "static/css/main.1a206faa.chunk.css.map": "/web/static/css/main.1a206faa.chunk.css.map",
+  "static/media/logo.svg": "/web/static/media/logo.5d5d9eef.svg"
 }
