@@ -1,27 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import MainPage from './Pages/MainPage';
 
 class App extends Component
 {
+  componentDidMount ()
+  {
+    document.body.style = 'background: rgb(250,250,250);';
+  }
+
   render ()
   {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={ logo } className="App-logo" alt="logo" />
-          <p>
-            Hello Goo!
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <MainPage />
       </div>
     );
   }
