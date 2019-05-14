@@ -29,12 +29,12 @@ class MainPage extends Component
 
                     {/* left */ }
                     <div className={ styles.left }>
-                        iOS下载
+                        iOS版下载
                     </div>
 
                     {/* right */ }
                     <div className={ styles.right }>
-                        Android下载
+                        Android版下载
                     </div>
 
                 </div>
