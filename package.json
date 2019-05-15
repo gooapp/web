@@ -5,7 +5,9 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-icons": "^3.7.0",
+    "react-scripts": "2.1.8",
+    "react-web-vector-icons": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,5 +29,5 @@
   "devDependencies": {
     "gh-pages": "^2.0.1"
   },
-  "homepage": "https://gooapp.github.io/"
+  "homepage": "https://gooapp.github.io/web"
 }
