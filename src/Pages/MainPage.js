@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import icon from '../imgs/icon.png';
 import shot1 from '../imgs/shot1.png';
 import shot2 from '../imgs/shot2.png';
+import shot3 from '../imgs/shot3.png';
+import shot4 from '../imgs/shot4.png';
+import shot5 from '../imgs/shot5.png';
 import styles from './mainPage.module.css';
 import { FaApple, FaAndroid } from 'react-icons/fa';
 
@@ -78,8 +81,9 @@ class MainPage extends Component
                 >
                     <img className={ styles.shotImage } src={ shot1 } />
                     <img className={ styles.shotImage } src={ shot2 } />
-                    <img className={ styles.shotImage } src={ shot1 } />
-                    <img className={ styles.shotImage } src={ shot2 } />
+                    <img className={ styles.shotImage } src={ shot3 } />
+                    <img className={ styles.shotImage } src={ shot4 } />
+                    <img className={ styles.shotImage } src={ shot5 } />
 
                 </div>
 
