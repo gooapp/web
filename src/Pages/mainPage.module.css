@@ -95,3 +95,17 @@
     width: 200px;
     margin: 20px;
 }
+
+.sep{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.protocol{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}

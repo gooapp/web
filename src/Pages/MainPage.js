@@ -7,6 +7,7 @@ import shot4 from '../imgs/shot4.png';
 import shot5 from '../imgs/shot5.png';
 import styles from './mainPage.module.css';
 import { FaApple, FaAndroid } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 class MainPage extends Component 
 {
@@ -99,6 +100,16 @@ class MainPage extends Component
                     <div>🧧积分能提现🧧</div>
                 </div>
 
+                {/* 协议 */ }
+                <div className={ styles.protocol }>
+                    <Link to="/mianZheShengMing">免责声明</Link>
+                    <span className={ styles.sep }>|</span>
+                    <Link to="/banQuanBaoHuZhiYin">版权保护政策</Link>
+                    <span className={ styles.sep }>|</span>
+                    <Link to="/yinSiQuanZhengCe">隐私权政策</Link>
+                    <span className={ styles.sep }>|</span>
+                    <Link to="/ruanJianXuKeXieYi">软件许可协议</Link>
+                </div>
 
             </div >
         );
