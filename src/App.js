@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import MainPage from './Pages/MainPage';
 import Mzsm from './Pages/Mzsm';
-import { Link, Switch, BrowserRouter, Route } from 'react-router-dom';
+import { Link, Switch, HashRouter, Route } from 'react-router-dom';
 import Bqbhzy from './Pages/Bqbhzy';
 import Ysqzc from './Pages/Ysqzc';
 import Rjxkxy from './Pages/Rjxkxy';
@@ -36,7 +36,7 @@ class App extends Component
   render ()
   {
     return (
-      <BrowserRouter>
+      <HashRouter basename='/'>
         <Switch>
           <Route path="/mianZheShengMing" component={ Mzsm } />
           <Route path="/banQuanBaoHuZhiYin" component={ Bqbhzy } />
@@ -44,7 +44,7 @@ class App extends Component
           <Route path="/ruanJianXuKeXieYi" component={ Rjxkxy } />>
           <Route path="/" component={ MainPage } />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 
