@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './WebSiteNaivgation.module.css';
-import { webSiteNavigationlist } from '../configFiles/config';
+import { fillList } from '../configFiles/config';
 
 
 class WebSiteNavigation extends Component 
@@ -29,7 +29,10 @@ class WebSiteNavigation extends Component
                         const items = cate.items;
 
                         return (
-                            <div className={ styles.cateContainer } key={ cate.title }>
+                            <div
+                                className={ styles.cateContainer }
+                                key={ cate.title }
+                            >
                                 <div className={ styles.cateHeader }>
                                     { cate.title }
                                 </div>
@@ -63,9 +66,10 @@ class WebSiteNavigation extends Component
         );
     }
 
-    refreshList ()
+    async refreshList ()
     {
-        this.setState({ list: webSiteNavigationlist });
+        const list = await fillList();
+        this.setState({ list: list });
     }
 }
 
