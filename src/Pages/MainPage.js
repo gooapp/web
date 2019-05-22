@@ -42,7 +42,7 @@ class MainPage extends Component
                 <div className={ styles.top }>
                     {/* topLeft */ }
                     <div className={ styles.topLeft }>
-                        <img className={ styles.icon } src={ icon } />
+                        <img className={ styles.icon } src={ icon } alt="图标" />
                     </div>
 
                     {/* topRight */ }
@@ -80,11 +80,11 @@ class MainPage extends Component
                     className={ styles.mid }
                     style={ { width: windowWidth - 40, } }
                 >
-                    <img className={ styles.shotImage } src={ shot1 } />
-                    <img className={ styles.shotImage } src={ shot2 } />
-                    <img className={ styles.shotImage } src={ shot3 } />
-                    <img className={ styles.shotImage } src={ shot4 } />
-                    <img className={ styles.shotImage } src={ shot5 } />
+                    <img className={ styles.shotImage } src={ shot1 } alt="img" />
+                    <img className={ styles.shotImage } src={ shot2 } alt="img" />
+                    <img className={ styles.shotImage } src={ shot3 } alt="img" />
+                    <img className={ styles.shotImage } src={ shot4 } alt="img" />
+                    <img className={ styles.shotImage } src={ shot5 } alt="img" />
 
                 </div>
 
@@ -102,13 +102,13 @@ class MainPage extends Component
 
                 {/* 协议 */ }
                 <div className={ styles.protocol }>
-                    <Link to="/mianZheShengMing">免责声明</Link>
+                    <Link to="/mianZheShengMing" className={ styles.bottomLink }>免责声明</Link>
                     <span className={ styles.sep }>|</span>
-                    <Link to="/banQuanBaoHuZhiYin">版权保护政策</Link>
+                    <Link to="/banQuanBaoHuZhiYin" className={ styles.bottomLink }>版权保护政策</Link>
                     <span className={ styles.sep }>|</span>
-                    <Link to="/yinSiQuanZhengCe">隐私权政策</Link>
+                    <Link to="/yinSiQuanZhengCe" className={ styles.bottomLink }>隐私权政策</Link>
                     <span className={ styles.sep }>|</span>
-                    <Link to="/ruanJianXuKeXieYi">软件许可协议</Link>
+                    <Link to="/ruanJianXuKeXieYi" className={ styles.bottomLink }>软件许可协议</Link>
                 </div>
 
             </div >

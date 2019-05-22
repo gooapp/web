@@ -2,29 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import MainPage from './Pages/MainPage';
 import Mzsm from './Pages/Mzsm';
-import { Link, Switch, HashRouter, Route } from 'react-router-dom';
+import { Switch, HashRouter, Route } from 'react-router-dom';
 import Bqbhzy from './Pages/Bqbhzy';
 import Ysqzc from './Pages/Ysqzc';
 import Rjxkxy from './Pages/Rjxkxy';
-
-
-function Home ()
-{
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
-
-function About ()
-{
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
-  );
-}
+import WebSiteNavigation from './Pages/WebSiteNavigation';
 
 class App extends Component
 {
@@ -36,12 +18,13 @@ class App extends Component
   render ()
   {
     return (
-      <HashRouter basename='/'>
+      <HashRouter basename='/' >
         <Switch>
           <Route path="/mianZheShengMing" component={ Mzsm } />
           <Route path="/banQuanBaoHuZhiYin" component={ Bqbhzy } />
           <Route path="/yinSiQuanZhengCe" component={ Ysqzc } />
-          <Route path="/ruanJianXuKeXieYi" component={ Rjxkxy } />>
+          <Route path="/ruanJianXuKeXieYi" component={ Rjxkxy } />
+          <Route path="/navigation/:version?" component={ WebSiteNavigation } />
           <Route path="/" component={ MainPage } />
         </Switch>
       </HashRouter>
