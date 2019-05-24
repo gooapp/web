@@ -1,6 +1,6 @@
 import CryptoJS from 'crypto-js';
 import { Base64 } from 'js-base64';
-import { async } from 'q';
+import AppConfig from './Config/appConfig.json';
 
 
 const key = "hzxfkjyxgs729";
@@ -32,8 +32,7 @@ function testEncrypt()
 
 async function encryptConfig()
 {
-    const res = await fetch("/json/config.txt");
-    const configTxt = await res.text();
+    const configTxt = JSON.stringify(AppConfig);
     const configTxtEn = encrypAES(configTxt);
     console.log("configTxt:", configTxt);
     console.log("configTxtEn:", configTxtEn);
@@ -45,8 +44,11 @@ async function decryptConfig(configTxtEn)
     console.log("decryptConfig:", configTxt);
 }
 
+
 // testEncrypt();
-encryptConfig();
+// encryptConfig();
 // decryptConfig("VTJGc2RHVmtYMStiMHBqZm1rV2R1R1pWM3ZVWlZkN0tKdEFXK2JndGVFZUVtejV6TGVTQkV1T0h3UWkzMDNzYQ");
+
+
 
 export { encrypAES, decryptAES };

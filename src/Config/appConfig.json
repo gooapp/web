@@ -1,6 +1,7 @@
 {
-    "rbv": 10,
-    "navgationBaseUrl": "https://qooooop.gitee.io/web/#/navigation/",
+    "rbv": 0,
+    "configUrlPath": "/json/config.txt",
+    "navgationBaseUrlPath": "#/navigation/",
     "novelUrl": "http://www.luoxia.com/",
     "comicUrl": "https://m.manhuagui.com/",
     "funnyUrl": "http://m.budejie.com/"

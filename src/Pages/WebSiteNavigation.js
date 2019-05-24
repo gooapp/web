@@ -11,6 +11,12 @@ class WebSiteNavigation extends Component
         list: [],
     }
 
+    componentWillMount () 
+    {
+        document.title = "小乌龟导航";
+
+    }
+
     componentDidMount ()
     {
         const { match: { params } } = this.props;
@@ -23,14 +29,14 @@ class WebSiteNavigation extends Component
         {
             try
             {
-                info = decryptAES(info);
+                const json = decryptAES(info);
+                const infoObj = JSON.parse(json);
+                buildVersion = parseInt(infoObj.buildVersion, 10);
             }
             catch (error)
             {
                 console.log("WebSiteNavigation decryptAES Error:", error);
             }
-
-            buildVersion = parseInt(info, 10);
         }
 
         console.log("buildVersion=", buildVersion);

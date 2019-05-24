@@ -70,10 +70,6 @@
         "title": "论坛",
         "items": [
             {
-                "title": "天涯社区",
-                "url": "http://focus.tianya.cn/"
-            },
-            {
                 "title": "猫扑",
                 "url": "http://m.mop.com/index.html"
             },
