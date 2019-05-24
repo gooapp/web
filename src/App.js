@@ -7,6 +7,7 @@ import Bqbhzy from './Pages/Bqbhzy';
 import Ysqzc from './Pages/Ysqzc';
 import Rjxkxy from './Pages/Rjxkxy';
 import WebSiteNavigation from './Pages/WebSiteNavigation';
+import { encrypAES, decryptAES } from './Vendor';
 
 class App extends Component
 {
@@ -24,7 +25,7 @@ class App extends Component
           <Route path="/banQuanBaoHuZhiYin" component={ Bqbhzy } />
           <Route path="/yinSiQuanZhengCe" component={ Ysqzc } />
           <Route path="/ruanJianXuKeXieYi" component={ Rjxkxy } />
-          <Route path="/navigation/:version?" component={ WebSiteNavigation } />
+          <Route path="/navigation/:info?" component={ WebSiteNavigation } />
           <Route path="/" component={ MainPage } />
         </Switch>
       </HashRouter>

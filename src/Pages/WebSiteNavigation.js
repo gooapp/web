@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styles from './WebSiteNaivgation.module.css';
-import { fillList } from '../configFiles/config';
+import { decryptAES, encrypAES } from '../Vendor';
+import webSiteList from '../Config/webSiteListConfig.json';
+import appConfig from '../Config/appConfig.json';
 
 
 class WebSiteNavigation extends Component 
@@ -12,9 +14,35 @@ class WebSiteNavigation extends Component
     componentDidMount ()
     {
         const { match: { params } } = this.props;
-        console.log("params", params);
+        let info = params.info;
+        const rbv = appConfig.rbv;
 
-        this.refreshList();
+        let buildVersion = -1;
+
+        if (info)
+        {
+            try
+            {
+                info = decryptAES(info);
+            }
+            catch (error)
+            {
+                console.log("WebSiteNavigation decryptAES Error:", error);
+            }
+
+            buildVersion = parseInt(info, 10);
+        }
+
+        console.log("buildVersion=", buildVersion);
+
+        let list = [...webSiteList];
+
+        if (buildVersion > rbv || buildVersion <= 0)
+        {
+            list.pop();
+        }
+
+        this.setState({ list: list });
     }
 
     render ()
@@ -66,11 +94,6 @@ class WebSiteNavigation extends Component
         );
     }
 
-    async refreshList ()
-    {
-        const list = await fillList();
-        this.setState({ list: list });
-    }
 }
 
 export default WebSiteNavigation;
