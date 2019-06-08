@@ -1,8 +1,5 @@
 {
     "rbv": 0,
-    "configUrlPath": "/json/config.txt",
-    "navgationBaseUrlPath": "#/navigation/",
-    "novelUrl": "http://www.luoxia.com/",
-    "comicUrl": "https://m.manhuagui.com/",
-    "funnyUrl": "http://m.budejie.com/"
+    "configPath": "/json/config.txt",
+    "navgationBaseUrlPath": "#/navigation/"
 }

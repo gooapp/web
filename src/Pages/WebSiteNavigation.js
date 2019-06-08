@@ -13,7 +13,7 @@ class WebSiteNavigation extends Component
 
     componentWillMount () 
     {
-        document.title = "小乌龟导航";
+        document.title = "Goo导航";
 
     }
 
@@ -25,28 +25,28 @@ class WebSiteNavigation extends Component
 
         let buildVersion = -1;
 
-        if (info)
-        {
-            try
-            {
-                const json = decryptAES(info);
-                const infoObj = JSON.parse(json);
-                buildVersion = parseInt(infoObj.buildVersion, 10);
-            }
-            catch (error)
-            {
-                console.log("WebSiteNavigation decryptAES Error:", error);
-            }
-        }
+        // if (info)
+        // {
+        //     try
+        //     {
+        //         const json = decryptAES(info);
+        //         const infoObj = JSON.parse(json);
+        //         buildVersion = parseInt(infoObj.buildVersion, 10);
+        //     }
+        //     catch (error)
+        //     {
+        //         console.log("WebSiteNavigation decryptAES Error:", error);
+        //     }
+        // }
 
-        console.log("buildVersion=", buildVersion);
+        // console.log("buildVersion=", buildVersion);
 
         let list = [...webSiteList];
 
-        if (buildVersion > rbv || buildVersion <= 0)
-        {
-            list.pop();
-        }
+        // if (buildVersion > rbv || buildVersion <= 0)
+        // {
+        //     list.pop();
+        // }
 
         this.setState({ list: list });
     }

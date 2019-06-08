@@ -3,10 +3,6 @@
         "title": "小说",
         "items": [
             {
-                "title": "落霞小说",
-                "url": "http://www.luoxia.com/"
-            },
-            {
                 "title": "69书吧",
                 "url": "https://m.69shu.org/"
             },
@@ -17,6 +13,10 @@
             {
                 "title": "快小说",
                 "url": "http://www.kukuv.com/mobile/"
+            },
+            {
+                "title": "落霞小说",
+                "url": "http://www.luoxia.com/"
             }
         ]
     },
@@ -38,6 +38,39 @@
             {
                 "title": "土豪漫画",
                 "url": "https://m.tohomh123.com/"
+            }
+        ]
+    },
+    {
+        "title": "影视",
+        "items": [
+            {
+                "title": "52电影院",
+                "url": "https://www.52dyy.vip/"
+            },
+            {
+                "title": "乐猫tv",
+                "url": "http://www.lemaotv.net/"
+            },
+            {
+                "title": "嗨哆咪影视",
+                "url": "https://m.haiduomi.com/"
+            },
+            {
+                "title": "4K屋",
+                "url": "http://m.kkkkmao.com/"
+            },
+            {
+                "title": "琪琪高清",
+                "url": "https://www.163kp.com/"
+            },
+            {
+                "title": "海兔影院",
+                "url": "http://www.haitum.cn/"
+            },
+            {
+                "title": "91美剧网",
+                "url": "https://91mjw.com/"
             }
         ]
     },
@@ -76,39 +109,6 @@
             {
                 "title": "豆瓣",
                 "url": "https://m.douban.com/"
-            }
-        ]
-    },
-    {
-        "title": "影视",
-        "items": [
-            {
-                "title": "52电影院",
-                "url": "https://www.52dyy.vip/"
-            },
-            {
-                "title": "乐猫tv",
-                "url": "http://www.lemaotv.net/"
-            },
-            {
-                "title": "嗨哆咪影视",
-                "url": "https://m.haiduomi.com/"
-            },
-            {
-                "title": "4K屋",
-                "url": "http://m.kkkkmao.com/"
-            },
-            {
-                "title": "琪琪高清",
-                "url": "https://www.163kp.com/"
-            },
-            {
-                "title": "海兔影院",
-                "url": "http://www.haitum.cn/"
-            },
-            {
-                "title": "91美剧网",
-                "url": "https://91mjw.com/"
             }
         ]
     }
