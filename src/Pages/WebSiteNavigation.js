@@ -11,52 +11,26 @@ class WebSiteNavigation extends Component
         list: [],
     }
 
-    componentWillMount () 
+    componentWillMount() 
     {
-        document.title = "Goo导航";
+        const name = this.props.match.params.name ? this.props.match.params.name + "导航" : "导航";
+        document.title = name;
 
     }
 
-    componentDidMount ()
+    componentDidMount()
     {
-        const { match: { params } } = this.props;
-        let info = params.info;
-        const rbv = appConfig.rbv;
-
-        let buildVersion = -1;
-
-        // if (info)
-        // {
-        //     try
-        //     {
-        //         const json = decryptAES(info);
-        //         const infoObj = JSON.parse(json);
-        //         buildVersion = parseInt(infoObj.buildVersion, 10);
-        //     }
-        //     catch (error)
-        //     {
-        //         console.log("WebSiteNavigation decryptAES Error:", error);
-        //     }
-        // }
-
-        // console.log("buildVersion=", buildVersion);
-
         let list = [...webSiteList];
-
-        // if (buildVersion > rbv || buildVersion <= 0)
-        // {
-        //     list.pop();
-        // }
 
         this.setState({ list: list });
     }
 
-    render ()
+    render()
     {
         const { list } = this.state;
 
         return (
-            <div className={ styles.container }>
+            <div className={styles.container}>
                 {
                     list.map((cate, index) =>
                     {
@@ -64,26 +38,26 @@ class WebSiteNavigation extends Component
 
                         return (
                             <div
-                                className={ styles.cateContainer }
-                                key={ cate.title }
+                                className={styles.cateContainer}
+                                key={cate.title}
                             >
-                                <div className={ styles.cateHeader }>
-                                    { cate.title }
+                                <div className={styles.cateHeader}>
+                                    {cate.title}
                                 </div>
-                                <div className={ styles.cateItemContainer }>
+                                <div className={styles.cateItemContainer}>
                                     {
                                         items.map((item, itemIndex) =>
                                         {
                                             return (
                                                 <div
-                                                    className={ styles.item }
-                                                    key={ item.title }
-                                                    onClick={ () =>
+                                                    className={styles.item}
+                                                    key={item.title}
+                                                    onClick={() =>
                                                     {
                                                         window.open(item.url, "_self");
-                                                    } }
+                                                    }}
                                                 >
-                                                    { item.title }
+                                                    {item.title}
                                                 </div>
                                             );
                                         })
