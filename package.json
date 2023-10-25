@@ -11,7 +11,7 @@
   },
   "private": true,
   "dependencies": {
-    "crypto-js": "^3.1.9-1",
+    "crypto-js": "^4.2.0",
     "js-base64": "^2.5.1",
     "node-rsa": "^1.0.5",
     "react": "^16.8.6",
